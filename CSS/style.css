@@ -1,0 +1,148 @@
+body
+{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: bisque;
+    direction: rtl;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    background:chocolate;
+    color: rgb(209, 194, 194);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:darkorange 5px solid;
+}
+
+header a
+{
+    color:rgb(240, 35, 103);
+    text-decoration: none;
+    font-size: 19px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #brand
+{
+    float: left;
+}
+header #brand h1
+{
+    margin: 0;
+    color: rgb(209, 194, 194);
+}
+header nav
+{
+    float: left;
+    margin-top: 10px;
+}
+header .current a
+{
+    color: rgb(128, 170, 248);
+    font-weight: bold;
+}
+header a:hover
+{
+    color: cornflowerblue;
+    font-weight: bold;
+}
+#showcase
+{
+    min-height: 330px;
+    background: url("../images/cover.jpg") no-repeat center;
+    background-size: cover;
+}
+#newsletter
+{
+    padding: 20px;
+    color:wheat;
+    background: rosybrown;
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form
+{
+    float: right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]
+{
+    padding: 15px;
+    height: 25px;
+    width: 250px;
+    text-align: left;
+}
+.button
+{
+    float: right;
+    height: 35px;
+    background: silver;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:tomato;
+}
+#boxes
+{
+    margin-top: px;
+}
+#boxes .box
+{
+    float: right;
+    text-align: center;
+    width: 120%;
+    padding: 10px;
+}
+footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    color: brown;
+    background-color: rgb(98, 138, 139);
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media(max-width:768px)
+{
+    header #brand,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header
+    {
+        padding-bottom: 20px;
+    }
+    #newsletter .button
+    {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"]
+    {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
